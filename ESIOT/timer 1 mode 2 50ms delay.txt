@@ -5,25 +5,25 @@ void main(){
 	unsigned int i,j;
 	while(1){
 		P2=0x00;
-		for(i=0;i<25;i++){
+		for(i=0;i<50;i++){
 			for(j=0;j<40;j++){
 				delay();
 			}
 		}
 		P2=0x10;
-		for(i=0;i<25;i++){
+		for(i=0;i<50;i++){
 			for(j=0;j<40;j++){
 				delay();
 			}
 		}
 		P2=0x20;
-		for(i=0;i<25;i++){
+		for(i=0;i<50;i++){
 			for(j=0;j<40;j++){
 				delay();
 			}
 		}
 		P2=0x30;
-		for(i=0;i<25;i++){
+		for(i=0;i<50;i++){
 			for(j=0;j<40;j++){
 				delay();
 			}
