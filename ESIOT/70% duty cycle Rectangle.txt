@@ -7,7 +7,7 @@ void main ()
     {
         P0 = 0x00; 
         delay(30);          // 30 ms off time
-        P0 = 0xff;
+        P0 = 0xFF;
         delay(70);          // 70 ms on time
     }
 }
