@@ -1,0 +1,14 @@
+int light_pin=5;
+void setup(){
+ pinMode(light_pin,INPUT);
+ Serial.begin(9600);
+}
+void loop()
+{
+ int ld=digitalRead(light_pin);
+ if(ld)
+ Serial.println("NoLight");
+ else
+ Serial.println("Light Detected");
+ delay(2000);
+}

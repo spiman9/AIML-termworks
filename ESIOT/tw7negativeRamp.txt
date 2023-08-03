@@ -1,0 +1,11 @@
+• -ve RAMP
+#include<reg51.h>
+void main(void)
+{
+unsigned int c;
+while(1)
+{
+ for(c=0xFF;c>0;c--)
+P0=c;
+}
+}

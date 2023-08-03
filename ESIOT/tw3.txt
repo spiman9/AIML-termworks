@@ -1,0 +1,26 @@
+#include"at89c51ed2.h"
+void TOMDelay(void);
+void main(void)
+{
+ while(1)
+ {
+ P2=0X00;
+TOMDelay();
+ P2=0x10;
+TOMDelay();
+ P2=0x20;
+TOMDelay();
+ P2=0X30;
+TOMDelay();
+ }
+}
+void TOMDelay(void)
+{
+TMOD=0x10;
+TL1=0xFE;
+TH1=0x4B;
+TR1=1;
+while(TF1==0);
+TR1=0;
+TF1=0;
+}

@@ -1,0 +1,19 @@
+const int btpin=13;
+int btstate=LOW;
+const int ledpin=A5;
+void setup() {
+ // put your setup code here, to run once:
+ pinMode(btpin,INPUT);
+ pinMode(ledpin,OUTPUT);
+ Serial.begin(9600);
+}
+void loop() {
+ // put your main code here, to run repeatedly:
+ btstate=digitalRead(btpin);
+ if(btstate==LOW) 
+ digitalWrite(ledpin,HIGH);
+ else
+ digitalWrite(ledpin,LOW); 
+ Serial.println(btstate) ;
+ delay(1000);
+}
